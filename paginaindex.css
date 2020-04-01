@@ -1,0 +1,220 @@
+html{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:100%;
+    
+}
+p{  font-size: 1em;
+    padding: 10px;
+    color:black;
+font-weight: bold;
+background-color: brown;
+ }
+ol{
+    font-size: 1em;
+    color:black;
+font-weight: bold;
+}
+body{
+    width: 100%;
+    font-size: 1em;
+    background-color: darkgrey;
+    background-image: url(https://wallpaperhd.wiki/wp-content/uploads/car-backgrounds-vector-background-with-silhouettes-of-cars-download-royalty-free-vector-file-eps-161029.jpg),
+    url(background.jpg);
+    height: 100%;
+    background-color: dimgrey;
+    background-repeat: repeat, repeat;
+    background-position: 0px 0px, center;
+    background-blend-mode: soft-light, soft-light;
+    background-size: auto, 600px;
+    
+
+}
+main{
+    padding-top: 60px;
+}
+*{
+margin: 0px;
+
+}
+div#primu{padding: 30px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-row-gap: 0.5em;
+grid-column-gap: 0.5em;
+}
+
+th,td{
+border:3px solid black;
+padding:5px;
+}
+td:empty{
+padding:20px;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+    empty-cells:show;
+}
+iframe{
+    width: 300px;
+    height:280px;
+    
+}
+
+nav{
+min-width:100%;
+position: fixed;
+padding: 0px;
+left:0px;
+top :0px;}
+
+
+ul{
+    left: 0px;
+    padding: 0px;
+    top:0px;
+}
+
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+display:block;
+height: 100%;
+width: 100%;
+
+font-size:1.2rem;
+font-weight:bold;
+height:1.5rem;
+line-height:1.5rem;
+text-align:center;		
+list-style-type:none;
+overflow:hidden;
+}
+ul.menu>li{
+transition: background 1s linear;
+float:left;
+width:25%;
+}
+ul.submenu>li{
+width:100%;
+transition: background 1s linear;
+}
+ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+display:block;
+height:	100%;
+text-decoration:none;
+color:black;
+}
+ul.menu>li>ul.submenu{
+
+top:0px;
+}
+
+ul.menu>li>ul.submenu>li
+{
+border-top:1px solid black;
+}
+ul.menu>li>ul.submenu>li:last-child
+{
+border-bottom:1px solid black;
+}
+
+ul.menu>li:hover, ul.submenu>li:hover{
+background:whitesmoke;
+}
+ul.menu>li#desprenoi:hover{
+overflow:visible;
+}
+ul.menu>li, ul.submenu>li{
+background-color: brown;
+opacity: 1;
+
+}
+div#rotitor {
+position: relative;
+max-width: 25%;
+animation-name: rotire;
+animation-iteration-count:infinite;
+animation-duration:1.5s;
+animation-fill-mode:forwards;
+animation-play-state: paused;
+animation-timing-function:linear;
+overflow: hidden;
+top:30px;
+
+}
+
+div#rotitor:hover {
+animation-play-state: running;
+animation-play-state:unset;
+
+
+}
+#container{
+position:relative;
+overflow:hidden;
+border:3px solid green;
+width:530px;
+height:300px;
+box-sizing:content-box;
+left: 20px;
+bottom: 20px;
+top:20px;
+}
+
+#derulant{
+display:flex;
+flex-wrap:nowrap;
+position: absolute;
+animation-name:go;
+animation-direction:alternate;
+animation-timing-function:linear;
+animation-iteration-count:infinite;
+animation-duration:15s;
+}
+#derulant>*{
+flex-shrink: 0;
+position:relative;
+}
+#container figure:hover figcaption{
+position:absolute;
+bottom:0;
+width:100%;
+height:auto;
+font-size:1.5em;
+background:rgba(200,200,200,0.5);
+text-align:center;
+}
+
+#container *{
+height:100%;
+width:auto;
+}
+
+@keyframes rotire{
+100%{
+transform:translate(0);
+}
+0%{
+transform:translate(0)
+}
+15%{
+transform:translate(200px)
+}
+30%{
+transform:translate(400px)
+}
+50%{
+transform:translate(1120px)
+}
+
+}
+@keyframes go{
+0% {
+left: 0px;
+}
+100% {
+left: -300%;
+}
+}

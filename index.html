@@ -2,136 +2,11 @@
 <html lang="ro">
     
     <head>
-        <style>
-            
-            html{
-                margin:0;
-                padding:0;
-                width: 100%;
-                height:100%;
-            }
-            p{  
-                color:black;
-            font-weight: bold;}
-            ol{
-                
-                color:black;
-            font-weight: bold;
-            }
-            body{
-                width: 100%;
-                margin-left: 10px;
-                background-color: darkgrey;
-                background-image: url(https://wallpaperhd.wiki/wp-content/uploads/car-backgrounds-vector-background-with-silhouettes-of-cars-download-royalty-free-vector-file-eps-161029.jpg),
-                url(background.jpg);
-                height: 100%;
-                background-color: dimgrey;
-                background-repeat: repeat, repeat;
-                background-position: 0px 0px, center;
-                background-blend-mode: soft-light, soft-light;
-                background-size: auto, 600px;
-                
-            
-            }
-            main{
-                padding-top: 60px;
-            }
-            *{
-	        margin: 0px;
-	        
-            }
-            figure{padding-bottom: 30px;}
-            
-            th,td{
-            border:3px solid black;
-            padding:5px;
-            }
-            td:empty{
-            padding:20px;
-            }
-            table{
-               
-                width: 100%;
-                border-collapse:collapse;
-                empty-cells:show;
-            }
-            nav{
-		    min-width:100%;
-            position: fixed;
-            padding: 0px;
-            left:0px;
-            top :0px;}
-
-
-            ul{
-                left: 0px;
-                padding: 0px;
-                top:0px;
-            }
-		    
-	        
-            ul.menu>li, ul.menu>li>ul.submenu>li{
-		    display:block;
-            height: 100%;
-            width: 100%;
-		
-		    font-size:1.2rem;
-		    font-weight:bold;
-		    height:1.5rem;
-		    line-height:1.5rem;
-		    text-align:center;		
-		    list-style-type:none;
-		    overflow:hidden;
-	        }
-	        ul.menu>li{
-            transition: background 1s linear;
-	        float:left;
-	        width:25%;
-	        }
-	        ul.submenu>li{
-	        width:100%;
-            transition: background 1s linear;
-            }
-            ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
-		    display:block;
-		    height:	100%;
-		    text-decoration:none;
-		    color:black;
-            }
-            ul.menu>li>ul.submenu{
-		    
-		    top:0px;
-	        }
-
-	ul.menu>li>ul.submenu>li
-	{
-		border-top:1px solid black;
-	}
-	ul.menu>li>ul.submenu>li:last-child
-	{
-		border-bottom:1px solid black;
-	}
-
-	ul.menu>li:hover, ul.submenu>li:hover{
-		background:whitesmoke;
-	}
-	ul.menu>li:hover{
-		overflow:visible;
-	}
-    ul.menu>li, ul.submenu>li{
-        background-color: brown;
-        opacity: 1;
         
-    }
-
-    
-    
-
-
-        </style>
-        <link rel="stylesheet",type="text/css">
+        
+        <link rel="stylesheet",type="text/css" href=paginaindex.css>
         <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-        
+        <link rel="stylesheet" type="text/css" href="query.css"/>
         <meta name="keywords" content="masina, piese, service">
     </head>
     <body>
@@ -140,16 +15,17 @@
             
             <nav>
                 <ul class="menu">
-                    <li>  Despre noi
+                    
+                    <li> <a href="paginapiese.html">Piese disponibile</a></li>
+                    <li><a href="angajati.html">Angajati</a> </li>
+                    <li><a href="paginapiese.html">Reduceri</a></li>
+                    <li id="desprenoi">  Despre noi
                         <ul class="submenu">
                             <li> <a href="#2"> contact</a></li>
                             <li> <a href="#3"> program</a></li>
                             <li> <a href="#4">istoric </a></li>
                         </ul>
                     </li>
-                    <li> <a href="paginapiese.html">Piese disponibile</a></li>
-                    <li><a href="angajati.html">Angajati</a> </li>
-                    <li><a href="paginapiese.html">Reduceri</a></li>
 
                 </ul>
             </nav>
@@ -157,9 +33,12 @@
 
         </header>
         <main>
-            <figure>
+            <div id="primu">
+            <figure id="prima">
                 <img src="poza.jpg">
             </figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11395.709910511256!2d25.997428758152218!3d44.43464983306031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201aa29d8946b%3A0x8d59c28e2428a0bc!2sMilitari%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1585682152623!5m2!1sro!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             <section>
                <p> Ai o problema cu masina?<br>
 La Auto First Class Professional gasesti solutia. Nu este nevoie sa mergi in mai multe service-uri sa-ti rezolvi problemele. Gasesti tot ce ai nevoie, rezolvi orice problema ai cu masina ta, la Auto First Class Professional.
@@ -221,9 +100,17 @@ Profesionalismul, promptitudinea, transparenta sunt doar cateva din atributele d
                     <p style="color:green">aici de pe vremea lu' pazvante chioru</p>
 
                 </section>
+                <div id="container">
+                    <div id="derulant">
+                        <figure><img src="20160519_120815.jpg"></figure>
+                        <figure><img src="service-auto-1.jpg"></figure>
+                        <figure><img src="Service-Monitel-Auto.jpg"></figure>
+                        <figure><img src="unnamed.jpg"></figure>
+                    </div>
+                </div>
 
-           
-
+                <div id="rotitor"><figure><img src="animatie.png"></figure><div>
+                
         </main>
     </body>
 </html>

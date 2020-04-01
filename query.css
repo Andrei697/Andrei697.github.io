@@ -1,0 +1,120 @@
+@media only screen 
+  and (min-device-width: 425px) 
+  and (max-device-width: 768px) 
+  {
+      html{
+        font-size: 20px;
+      }
+      ul{
+          font-size: 50px;
+          min-height: 100px;
+      }
+      ul.menu>li, ul.menu>li>ul.submenu>li{
+        display:block;
+        height: 100%;
+        width: 100%;
+    
+        font-size:1.5rem;
+        font-weight:bold;
+        height:2rem;
+        line-height:2rem;
+        text-align:center;		
+        list-style-type:none;
+        overflow:hidden;
+        }
+        figure#prima{padding-top: 120px;}
+        div#rotitor{min-width: 50%;}
+        @keyframes rotire{
+          100%{
+              transform:translate(0);
+            }
+            0%{
+              transform:translate(0)
+            }
+            15%{
+              transform:translate(200px)
+            }
+            30%{
+              transform:translate(400px)
+            }
+            50%{
+              transform:translate(600px)
+            }
+          
+        }
+
+  }
+  @media only screen 
+  and (max-device-width: 424px) {
+    html{
+      font-size: 30px;
+    }
+    ul{
+        font-size: 50px;
+        min-height: 100px;
+    }
+    ul.menu>li, ul.menu>li>ul.submenu>li{
+      display:block;
+      height: 100%;
+      width: 100%;
+  
+      font-size:2rem;
+      font-weight:bold;
+      height:2rem;
+      line-height:2rem;
+      text-align:center;		
+      list-style-type:none;
+      overflow:hidden;
+      }
+      figure#prima{padding-top: 200px;}
+      div#rotitor{min-width: 50%;}
+      @keyframes rotire{
+        100%{
+            transform:translate(0);
+          }
+          0%{
+            transform:translate(0)
+          }
+          15%{
+            transform:translate(200px)
+          }
+          30%{
+            transform:translate(300px)
+          }
+          50%{
+            transform:translate(500px)
+          }
+        
+      }
+      
+
+  }
+  @media screen
+  and (max-device-width:1024px)
+  and (min-device-width:769px)
+  {  ul.menu>li{
+    width: 25%;
+  }
+    div#rotitor{min-width: 35%;}
+    @keyframes rotire{
+      100%{
+          transform:translate(0);
+        }
+        0%{
+          transform:translate(0)
+        }
+        15%{
+          transform:translate(180px)
+        }
+        30%{
+          transform:translate(320px)
+        }
+        50%{
+          transform:translate(650px)
+        }
+      
+    }
+    
+  }
+  
+  
