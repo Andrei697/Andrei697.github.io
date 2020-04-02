@@ -40,7 +40,7 @@ margin: 0px;
 }
 div#primu{padding: 30px;
 display: grid;
-grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(4,1fr);
 grid-row-gap: 0.5em;
 grid-column-gap: 0.5em;
 }
@@ -64,6 +64,7 @@ iframe{
 }
 
 nav{
+z-index: 1;
 min-width:100%;
 position: fixed;
 padding: 0px;
@@ -190,6 +191,41 @@ text-align:center;
 #container *{
 height:100%;
 width:auto;
+}
+div#volan {
+    width: 157px;
+    height: 150px;
+    animation-name: invarteala;
+    animation-iteration-count:infinite;
+    animation-duration:1.5s;
+    animation-play-state: running;
+    animation-timing-function:linear;
+}
+div#fum {
+    width: 56px;
+    height: 29px;
+    animation-name:fum;
+    animation-iteration-count:infinite;
+    animation-duration:0.5s;
+    animation-play-state: running;
+    animation-timing-function:linear;
+    float: right;
+    margin-top: 200px;
+    margin-top: 130px;
+    margin-left: auto;
+
+}
+
+@keyframes invarteala{
+	100%{
+        transform:rotate(360deg);
+        
+    }
+}
+@keyframes fum{
+    100%{
+        transform: skew(30deg);
+    }
 }
 
 @keyframes rotire{

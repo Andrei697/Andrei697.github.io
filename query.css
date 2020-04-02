@@ -42,6 +42,21 @@
             }
           
         }
+        div#primu>div#volan{
+          margin-top: 150px;
+        }
+        div#primu>iframe{
+          margin-top: 100px;
+        }
+        ol{
+          margin-left: 10px;
+        }
+        div#primu>div#fum{
+          margin-top: 270px;
+          margin-left: 30px;
+        }
+
+        
 
   }
   @media only screen 
@@ -86,6 +101,18 @@
           }
         
       }
+      div#primu>div#volan{
+        margin-top: 170px;
+      }
+      div#primu>iframe{
+        margin-top: 160px;
+      }
+      ol{
+        margin-left: 10px;
+      }
+      div#primu>div#fum{
+      margin-top: 300px;
+    margin-left: 19px;}
       
 
   }
@@ -114,6 +141,9 @@
         }
       
     }
+    div#primu>div#fum{
+    margin-top: 130px;
+    margin-left: 30px;}
     
   }
   
